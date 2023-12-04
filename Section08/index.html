@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+		#contenedor-padre{
+			width: 500px;
+			height: 500px;
+			background-color: #7CB342;
+		}
+
+		#contenedor-hijo1{
+			width: 300px;
+			height: 300px;
+			background-color: #FFB300;
+		}
+
+		#contenedor-hijo2{
+			width: 100px;
+			height: 100px;
+			background-color: #6D4C41;
+		}
+
+		span{
+			color: #FFFFFF;
+			font-weight: bold;
+			padding: 5px;
+			font-family: Arial;
+		}
+
+	</style>
+</head>
+<body>
+    <div id="contenedor-padre">
+		<span>Padre</span>
+		<div id="contenedor-hijo1">
+			<span>Hijo #1</span>
+			<div id="contenedor-hijo2">
+				<span>Hijo #2</span>
+			</div>
+		</div>
+	</div>
+    <script src="./script04.js"></script>
+</body>
+</html>

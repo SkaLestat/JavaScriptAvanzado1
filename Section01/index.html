@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* console.log(this)
+        function incrementar(val){
+            return val + 1;
+        }
+        incrementar(9); */
+
+        /* var a = 1;
+        function primeraFuncion(){
+            console.log("el valor de a es: ", a);
+        }
+        function imprimirLetra(){
+            var a = 2;
+            primeraFuncion();
+        }
+        imprimirLetra(); // imprime 1 */
+
+        /* var variableGlobal = "Global";
+        function saludoLocal(){
+            var variableLocal = "Local";
+            console.log(variableLocal);
+        }
+        console.log(variableGlobal);
+        saludoLocal();
+        console.log(variableLocal); */
+
+        /* sentencias for, if, while, switch no generan scopes, solo las funciones, SOLO PASA EN JS */
+        /* for(var i = 0; i < 10; i++){}
+        console.log(i);
+        if(true){
+            var temp = "temp";
+        }
+        console.log(temp); */
+        
+        /* Funcion Closure */
+        /* var a = 1;
+        function primeraFuncion(){
+            var b = 2;
+            return function(){
+                console.log("a = ", a);
+                console.log("b = ", b);
+            }
+        }
+        var temp = primeraFuncion();
+        temp();
+
+        // function crearSaludo(saludo, nombre){ //sobra el parametro nombre
+        function crearSaludo(saludo){
+            let saludoTemp = saludo;
+            return function(nombre){
+                console.log(saludoTemp + " " + nombre);
+            }
+        }
+        let saludoGuardado = crearSaludo("Hola!,");
+        saludoGuardado("Carlos"); */
+
+
+    </script>
+</body>
+</html>
